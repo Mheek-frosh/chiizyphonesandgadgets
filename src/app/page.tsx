@@ -17,30 +17,36 @@ export default async function Home() {
       <HeroSection />
 
       <section id="swap">
-        <div className="section-header">
-          <h2>Swap Your Device</h2>
-          <p>Trade in your old phone or gadget for instant value toward your next upgrade</p>
+        <div className="section-inner">
+          <div className="section-header">
+            <h2>Swap Your Device</h2>
+            <p>Trade in your old phone or gadget for instant value toward your next upgrade</p>
+          </div>
+          <SwapCards />
         </div>
-        <SwapCards />
       </section>
 
       <section id="get-new">
-        <div className="section-header">
-          <h2>Get New</h2>
-          <p>Brand new phones, MacBooks, speakers & accessories</p>
+        <div className="section-inner">
+          <div className="section-header">
+            <h2>Get New</h2>
+            <p>Brand new phones, MacBooks, speakers & accessories</p>
+          </div>
+          <GetNewSection />
         </div>
-        <GetNewSection />
       </section>
 
       <section className="categories" id="products">
-        <div className="section-header">
-          <h2>Shop by Category</h2>
-          <p>Browse our curated selection of premium devices</p>
-          <Link href="/catalog" className="btn btn-primary" style={{ marginTop: "1rem" }}>
-            📋 View Full Catalog & Cart
-          </Link>
+        <div className="section-inner">
+          <div className="section-header">
+            <h2>Shop by Category</h2>
+            <p>Browse our curated selection of premium devices</p>
+            <Link href="/catalog" className="btn btn-primary" style={{ marginTop: "1rem" }}>
+              📋 View Full Catalog & Cart
+            </Link>
+          </div>
+          <ProductsSection categories={categories} products={products} />
         </div>
-        <ProductsSection categories={categories} products={products} />
       </section>
 
       <footer className="footer" id="contact">
