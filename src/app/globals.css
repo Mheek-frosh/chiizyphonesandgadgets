@@ -187,8 +187,8 @@ body {
 .hero-chatbot-btn {
   position: absolute; left: auto; right: 1.5rem; bottom: 4rem;
   z-index: 4; display: flex; align-items: center; justify-content: center;
-  width: 56px; height: 56px; padding: 0; background: #25D366; color: white; border: none;
-  border-radius: 50%; cursor: pointer; box-shadow: 0 4px 20px rgba(37, 211, 102, 0.5);
+  width: 50px; height: 50px; padding: 0; background: #25D366; color: white; border: none;
+  border-radius: 50%; cursor: pointer; box-shadow: 0 4px 16px rgba(37, 211, 102, 0.45);
   transition: all var(--transition);
 }
 .hero-chatbot-btn:hover {
@@ -271,31 +271,31 @@ section[id] { scroll-margin-top: 80px; }
 
 .chatbot-toggle {
   position: fixed; bottom: 1.5rem; right: 1.5rem;
-  width: 60px; height: 60px; border-radius: 50%;
+  width: 52px; height: 52px; border-radius: 50%;
   background: #25D366; color: var(--white); border: none; cursor: pointer;
-  box-shadow: 0 4px 20px rgba(37, 211, 102, 0.5); z-index: 999;
+  box-shadow: 0 4px 16px rgba(37, 211, 102, 0.45); z-index: 999;
   display: flex; align-items: center; justify-content: center;
   transition: all var(--transition); position: relative;
 }
 .chatbot-toggle:hover {
-  transform: scale(1.05); box-shadow: 0 6px 24px rgba(37, 211, 102, 0.6);
+  transform: scale(1.05); box-shadow: 0 6px 20px rgba(37, 211, 102, 0.55);
   background: #20bd5a;
 }
 .chatbot-whatsapp-icon {
-  width: 32px; height: 32px;
+  width: 26px; height: 26px;
 }
 .chatbot-header-icon .chatbot-whatsapp-icon {
-  width: 28px; height: 28px;
+  width: 22px; height: 22px;
 }
 .chatbot-whatsapp-icon-sm {
-  width: 18px; height: 18px;
+  width: 16px; height: 16px;
 }
 .chatbot-send-btn { flex-shrink: 0; }
 .chatbot-whatsapp-buttons { padding: 0 1rem 1rem; }
 .chatbot-cart-badge {
-  position: absolute; top: -4px; right: -4px;
-  background: #25D366; color: white; font-size: 0.7rem; font-weight: 700;
-  min-width: 20px; height: 20px; border-radius: 10px;
+  position: absolute; top: -2px; right: -2px;
+  background: #25D366; color: white; font-size: 0.65rem; font-weight: 700;
+  min-width: 18px; height: 18px; border-radius: 9px;
   display: flex; align-items: center; justify-content: center; padding: 0 4px;
 }
 .chatbot-cart-section { margin-top: 0.5rem; }
@@ -309,10 +309,10 @@ section[id] { scroll-margin-top: 80px; }
 .chatbot-cart-remove:hover { color: #dc2626; }
 .chatbot-cart-total { font-weight: 700; margin-top: 0.5rem; color: var(--dark); }
 .chatbot-panel {
-  position: fixed; bottom: 5.5rem; right: 1.5rem;
-  width: 380px; max-width: calc(100vw - 3rem); height: 480px;
+  position: fixed; bottom: 4.75rem; right: 1.5rem;
+  width: 340px; max-width: calc(100vw - 2rem); height: 420px;
   background: var(--white); border-radius: var(--radius);
-  box-shadow: 0 10px 40px rgba(0,0,0,0.2); z-index: 998;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.18); z-index: 998;
   display: none; flex-direction: column; overflow: hidden; border: 1px solid var(--gray-200);
 }
 .chatbot-panel.open { display: flex; }
@@ -458,17 +458,24 @@ section[id] { scroll-margin-top: 80px; }
   }
   .nav-links.open { transform: translateY(0); opacity: 1; pointer-events: auto; }
   .hero-chatbot-btn {
-    right: 1rem; bottom: 3rem; width: 50px; height: 50px;
+    right: 1rem; bottom: 3rem; width: 48px; height: 48px;
   }
   .chatbot-toggle {
-    bottom: 1rem; right: 1rem; width: 56px; height: 56px;
+    bottom: 1rem; right: 1rem; width: 50px; height: 50px;
   }
   .chatbot-panel {
-    width: calc(100vw - 2rem); right: 1rem; left: 1rem; bottom: 4.5rem;
-    height: min(70vh, 520px); max-height: 520px;
+    width: calc(100vw - 1.5rem); right: 0.75rem; left: 0.75rem; bottom: 4rem;
+    height: min(70vh, 420px); max-height: 420px;
   }
+  .chatbot-header { padding: 0.875rem 1rem; }
+  .chatbot-header h3 { font-size: 1rem; }
+  .chatbot-header small { font-size: 0.8rem; }
+  .chatbot-messages { padding: 0.75rem; }
+  .chat-msg { font-size: 0.85rem; padding: 0.6rem 0.875rem; }
   .chatbot-input-area { padding: 0.75rem 1rem; }
-  .chatbot-input-area input { font-size: 16px; }
+  .chatbot-input-area input { font-size: 16px; min-height: 44px; }
+  .chatbot-input-area button { min-height: 44px; padding: 0.6rem 1rem; }
+  .whatsapp-send { min-height: 44px; padding: 0.65rem 1rem !important; font-size: 0.9rem; }
   .product-card .product-buttons { flex-wrap: wrap; }
   .product-card .product-buttons .btn { min-width: 120px; }
   .contact-main { padding: 6rem 1.5rem 4rem; }
