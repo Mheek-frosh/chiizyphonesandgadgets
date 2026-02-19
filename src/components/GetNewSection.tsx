@@ -37,7 +37,7 @@ export default function GetNewSection() {
             src={c.image}
             alt={c.title}
             width={400}
-            height={140}
+            height={160}
             className="cta-card-img"
           />
           <h3>{c.title}</h3>

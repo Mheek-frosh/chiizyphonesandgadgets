@@ -43,7 +43,7 @@ export default function ProductsSection({ categories, products }: { categories: 
       <div className="products-grid" style={{ marginTop: "2rem" }}>
         {products.map((p) => (
           <div key={p.id} className={`product-card ${inCart(p.id) ? "in-cart" : ""}`} data-category={p.category}>
-            <Image src={p.image} alt={p.name} width={400} height={200} style={{ width: "100%", height: 200, objectFit: "cover" }} />
+            <Image src={p.image} alt={p.name} width={400} height={200} style={{ width: "100%", height: 220, objectFit: "cover" }} />
             <div className="product-info">
               <div className="category-badge">{p.category}</div>
               <h3>{p.name}</h3>
